@@ -1,0 +1,31 @@
+name: Beta playtest report
+description: Report a translation, display, or gameplay bug with a screenshot.
+title: "[Beta] "
+body:
+  - type: input
+    id: patch-version
+    attributes:
+      label: Patch version
+      placeholder: v0.1.0-beta
+    validations:
+      required: true
+  - type: input
+    id: platform
+    attributes:
+      label: Emulator, core version, or hardware
+    validations:
+      required: true
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: What happened and how to reproduce it
+      description: Include the scene or location, the actions you took, and what you expected to happen.
+    validations:
+      required: true
+  - type: textarea
+    id: screenshot
+    attributes:
+      label: Screenshot of the affected screen
+      description: Drag or paste an image here. For hardware, a photo of the screen is fine. Keep ROMs, BIOS files, and saves out of the report.
+    validations:
+      required: true
